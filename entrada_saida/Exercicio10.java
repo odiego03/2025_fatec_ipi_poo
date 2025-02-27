@@ -1,13 +1,11 @@
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 public class Exercicio10{
-    public static void main(String [] args){
-        Scanner leitor = new Scanner(System.in);
+    static public void main(String [] args){
         double fabrica, distribuidor, impostos, custoFinal;
-        System.out.println("Digite o primeiro valor");
-        fabrica = leitor.nextDouble();
+        fabrica = Double.parseDouble(JOptionPane.showInputDialog("Digite o valor do carro: "));
         distribuidor = 0.28 * fabrica;
         impostos = 0.45 * fabrica;
         custoFinal = fabrica + distribuidor + impostos;
-        System.out.printf("%.2f + %.2f + %.2f = %.2f\n", fabrica, distribuidor, impostos, custoFinal);
+        JOptionPane.showMessageDialog(null, custoFinal); 
     }
 }
