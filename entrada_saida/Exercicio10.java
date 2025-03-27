@@ -1,4 +1,4 @@
-import javax.swing.JOptionPane;
+import javax.swing.JOptionPane; 
 public class Exercicio10{
     static public void main(String [] args){
         double fabrica, distribuidor, impostos, custoFinal;
